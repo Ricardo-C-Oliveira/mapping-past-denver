@@ -1,0 +1,154 @@
+<html>
+
+<head>
+	<title>Mapping Past Denver</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+	<link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"/>
+
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+	<script src="Plugins/Leaflet.label-master/dist/leaflet.label.js"></script>
+	<link rel="stylesheet" href="Plugins/Leaflet.label-master/dist/leaflet.label.css" />
+
+
+	<link rel="stylesheet" href="Plugins/sidebar/leaflet-sidebar.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<script src="Plugins/sidebar/leaflet-sidebar.js"></script>
+	<script src="Plugins/highlight/highlight.pack.js"></script>
+	<link rel="stylesheet" href="Plugins/highlight/styles/monokai.css">
+
+	<script src="Plugins/intro.js-master/intro.js-master/intro.js"></script>
+	<link rel="stylesheet" href="Plugins/intro.js-master/intro.js-master/introjs.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="data/1887.js"></script>
+    <script src="data/1925.js"></script>
+    <script src="data/1961.js"></script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		$(function() {
+			var introguide = introJs();
+			introguide.setOptions({
+				steps: [{
+					element: document.querySelector('#map > div.leaflet-control-container > div.leaflet-top.leaflet-left > div'),
+					intro: 'Pick a year and start exploring the urban past of Denver!',
+					position: 'right'
+				}, {
+					element: document.querySelector('#sidebar'),
+					intro: 'Over here you will find more information about this project.',
+					position: 'right'
+				}, ]
+			});
+			introguide.start();
+		});
+	</script>
+
+	<script>
+		//javascript highlight plugin
+		hljs.initHighlightingOnLoad();
+	</script>
+
+	<div id="sidebar" class="sidebar collapsed">
+		<!-- Nav tabs -->
+		<ul class="sidebar-tabs" role="tablist">
+			<li><a href="#home" role="tab"><i class="fa fa-question-circle"></i></a>
+			</li>
+			<li><a href="#code" role="tab"><i class="fa fa-code"></i></a>
+			</li>
+            <!--
+			<li><a href="#changelog" role="tab"><i class="fa fa-gear"></i></a>
+			</li>
+            //-->
+			<li><a href="#contact" role="tab"><i class="fa fa-envelope"></i></a>
+			</li>
+
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="sidebar-content active">
+			<div class="sidebar-pane" id="home">
+				<h1>Mapping Past Denver</h1>
+
+				<p class="lorem">This project started in the spring of 2015 as an independent study in the geography program at the University of Colorado at Denver under supervision of Mike Hinke. The goal of this project was to explore how to combine different FOSS4G (Free and
+					Open Source Software for Geospatial Applications) technologies into a single product. The theme chosen for this project was the historical urban past of Denver.</p>
+
+				<p class="lorem">The Denver public library holds and amazing collection of Sanborn fire insurance map on its archives, such maps were photographed and then digitized in QGIS. Each building in Denver lower downtown was copied into digital format with its attributes
+					such as building use, name of the business, number of floors and so on. However, the Denver Public Library only holds copies for 1925 and 1961 editions of such maps, luckily the University of Colorado at Boulder offers online copies from 1887 Sanborn
+					maps.</p>
+				
+				<img src="img/img1.jpg" class="img-circle" width="200" height="200">
+				<p class="small legend">One of the many original maps used in this project.</p>
+			</div> 
+			<!--
+            <div class="sidebar-pane" id="changelog">
+				<h1>Changelog</h1>
+
+				<p class="lorem"><b>3/30/15</b> Add highlight.js to show snapshot of code.</p>
+				<p class="lorem"><b>3/30/15</b> Removes fullscream function, was conflicting with sidepane.</p>
+				<p class="lorem"><b>3/29/15</b> Add sidepane</p>
+			</div>
+    	    //-->  
+			<div class="sidebar-pane" id="code">
+				<h1>Technical Side</h1>
+                
+                <p class="lorem"><b>Note:</b> If you are accessing this page from www.ricardooliveiragis.com the explanation below is not entirely true. In this case, the data is being served direct as a geoJson file given the fact that this web hosting does not offer support to postgreSQL/Geoserver stack. However, the final project was delivered following the explanation below.</p>
+
+				<p class="lorem">To store this data we chose PostgreSQL given its proven stability and flexibility. To work with spatial data on this system we used PostGIS, which is the spatial extension for PostgreSQL. With our data stored in a stable RDBMS the next step was to
+					serve it to the web, for this we used Geoserver. The last piece was to create the end-user platform where the data would be displayed, although there are many solid choices out there we decided that Leaflet provided all the key aspects in a neat
+					package. Leaflet is stable, lightweight and more importantly vastly expandable.</p>
+
+				<p class="lorem">The trickiest part on this project was to create a way of how leaflet would be able to render the data being served by Geoserver. However, given the fact that leaflet is written in javascript we could jQuery to connect the two pieces together. The AJAX
+					call is shown below, note that once the call is succefully made we attribute the data to a specific variable to be used later on, in this case the dataset1.</p>
+
+				<pre><code class="js">
+$.ajax({
+   url: "http://localhost:8181/geoserver/PastDenver/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=PastDenver:dataset3&maxFeatures=300&outputFormat=text/javascript&format_options=callback:getJson1",
+        dataType: 'jsonp',
+        jsonpCallback: 'getJson1',
+        success: function (response) {
+            WFSLayers = L.geoJson(response, {
+                style: function (feature) {
+                    return {
+                        weight: 5,
+                        color: '#6e7ce8',
+                        weight: 2,
+                        opacity: 1,
+                        dashArray: '3',
+                        fillOpacity: 0.7,
+                    };
+                },
+                onEachFeature: effects
+            }).addTo(dataset1);
+        }
+    });
+</code></pre>
+			</div>
+
+			<div class="sidebar-pane" id="contact">
+				<h1>Contact</h1>
+
+				<p class="lorem"><b>Ricardo Oliveira</b> - Geography and Enviromental Science - University of Colorado Denver</p>
+                <p class="lorem"><b>Contact me:</b><a href="mailto:ricardo.oliveira@ucdenver.edu"> ricardo.oliveira@ucdenver.edu</a></p>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="map" class="sidebar-map">
+
+
+		<script src="script.js"></script>
+	</div>
+</body>
+
+</html>
