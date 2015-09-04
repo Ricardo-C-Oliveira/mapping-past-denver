@@ -1,101 +1,245 @@
- var map = L.map('map', {
-     'zoomControl': false,
- }).setView([39.752171, -104.998817], 17);
+var southWest = L.latLng(39.747856, -106.003864),
+  northEast = L.latLng(39.757304, -104.992214),
+  bounds = L.latLngBounds(southWest, northEast);
 
- //zoom custom position
- L.control.zoom({
-     position: 'topright'
- }).addTo(map);
-
- //the base map
- L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
-     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
- }).addTo(map);
-
- //create the datasets that will hold the layers      
- var dataset1 = new L.layerGroup();
- var dataset2 = new L.layerGroup();
- var dataset3 = new L.layerGroup();
-
- //JSON request 
- L.geoJson(data1, {
-     style: function (feature) {
-         return {
-             weight: 5,
-             color: '#6e7ce8',
-             weight: 2,
-             opacity: 1,
-             dashArray: '3',
-             fillOpacity: 0.7,
-         };
-     },
-     onEachFeature: effects,
- }).addTo(dataset1);
+var map = L.map('map', {
+  'zoomControl': false,
+  'minZoom': 17,
+  'maxBounds': bounds
+}).setView([39.752171, -105.000500], 17);
 
 
- L.geoJson(data2, {
-     style: function (feature) {
-         return {
-             weight: 5,
-             color: '#e31424',
-             weight: 2,
-             opacity: 1,
-             dashArray: '3',
-             fillOpacity: 0.7,
-         };
-     },
-     onEachFeature: effects,
- }).addTo(dataset2);
+//zoom custom position
+L.control.zoom({
+  position: 'topright'
+}).addTo(map);
 
- L.geoJson(data3, {
-     style: function (feature) {
-         return {
-             weight: 5,
-             color: '#14e324',
-             weight: 2,
-             opacity: 1,
-             dashArray: '3',
-             fillOpacity: 0.7,
-         };
-     },
-     onEachFeature: effects,
- }).addTo(dataset3);
+//the base map
+L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+}).addTo(map);
 
+//slider to set opacity
+var slider1 = document.getElementById('slider1');
+var slider2 = document.getElementById('slider2');
+var slider3 = document.getElementById('slider3');
 
- //hover effect and popup effect
- function effects(feature, layer) {
-     popupOptions = {
-         maxWidth: 200
-     };
-     if (feature.properties.NAME !== null) {
-         layer.bindLabel(feature.properties.NAME, popupOptions, {
-             noHide: true
-         });
-     };
-     layer.bindPopup("<b>Name: </b>" + feature.properties.NAME + "<br><b>Description: </b>" + feature.properties.DESCR + "<br><b>Floors: </b>" + feature.properties.FLOORS + "<br><b>Material: </b>" + feature.properties.MATERIAL);
-     layer.on({
-         click: zoomToFeature
-     });
- };
+noUiSlider.create(slider1, {
+  start: [0.7],
+  connect: 'lower',
+  range: {
+    'min': [0.1],
+    'max': [1]
+  }
+});
+noUiSlider.create(slider2, {
+  start: [0.7],
+  connect: 'lower',
+  range: {
+    'min': [0.1],
+    'max': [1]
+  }
+});
+noUiSlider.create(slider3, {
+  start: [0.7],
+  connect: 'lower',
+  range: {
+    'min': [0.1],
+    'max': [1]
+  }
+});
 
+function style1(feature) {
+  return {
+    weight: 5,
+    fillColor: '#FF9900',
+    color: "rgba(115, 118, 222, 0)",
+    weight: 2,
+    opacity: 1,
+    fillOpacity: slider1.noUiSlider.get(),
+  };
+};
 
- //zoom to feature
- function zoomToFeature(e) {
-     map.fitBounds(e.target.getBounds());
- }
+function style2(feature) {
+  return {
+    weight: 5,
+    fillColor: '#003300',
+    color: "rgba(115, 118, 222, 0)",
+    weight: 2,
+    opacity: 1,
+    fillOpacity: slider2.noUiSlider.get(),
+  };
+};
 
- //group the datasets
- var overlayData = {
-     "1887": dataset1,
-     "1925": dataset2,
-     "1961": dataset3
- };
+function style3(feature) {
+  return {
+    weight: 5,
+    fillColor: '#0000FF',
+    color: "rgba(115, 118, 222, 0)",
+    weight: 2,
+    opacity: 1,
+    fillOpacity: slider3.noUiSlider.get(),
+  };
+};
+//button is clicked to show layer
+$("#layer1").click(function() {
+  if ($(this).children().hasClass('glyphicon glyphicon-ok')) {
+    map.removeLayer(geojson1);
+    slider1.setAttribute('disabled', true); //disable slider when layer is removed
+    $('#slider1').css('background-color', '#ccc'); //set slider color to gray
+    $('#layer1').css('background', '#26a69e'); //return button to original color
+    $('#area1').empty(); //remove area number
+    $('#count1').empty(); //remove count number
+  } else {
+    slider1.removeAttribute('disabled');
+    $('#slider1').css('background-color', '#5c97bf'); //set slider color to blue
+    $('#layer1').css('background', '#FF9900'); //set button color to match the layer's color
+    $.getJSON("data/1887.json", function(data) {
+      geojson1 = L.geoJson(data, {
+        style: style1,
+        onEachFeature: effects
+      });
+      map.addLayer(geojson1);
+      //using turf to calculate area
+      var data = geojson1.toGeoJSON(); //needs to tranalate the layer into geoJson
+      var area1 = turf.area(data); //turf function to calculate area
+      var area1 = area1.toFixed(2); //round to two decimals
+      $('#area1').html('1887: ' + area1 + ' square meters'); //shows the area
+      var count1 = data.features.length; //couts the number of objects in data
+      $('#count1').html('1887: ' + count1 + ' structures.'); //shows the count
+    });
+  }
+});
+$("#layer2").click(function() {
+  if ($(this).children().hasClass('glyphicon glyphicon-ok')) {
+    map.removeLayer(geojson2);
+    slider2.setAttribute('disabled', true);
+    $('#slider2').css('background-color', '#ccc');
+    $('#layer2').css('background', '#26a69e');
+    $('#area2').empty();
+    $('#count2').empty();
+  } else {
+    slider2.removeAttribute('disabled');
+    $('#slider2').css('background-color', '#5c97bf');
+    $('#layer2').css('background', '#0e5e0e');
+    $.getJSON("data/1925.json", function(data) {
+      geojson2 = L.geoJson(data, {
+        style: style2,
+        onEachFeature: effects
+      });
+      map.addLayer(geojson2);
+      console.log(geojson2);
+      var data = geojson2.toGeoJSON();
+      var area2 = turf.area(data);
+      var area2 = area2.toFixed(2);
+      $('#area2').html('1925: ' + area2 + ' square meters');
+      var count2 = data.features.length;
+      $('#count2').html('1925: ' + count2 + ' structures.');
+    });
+  }
+});
+$("#layer3").click(function() {
+  if ($(this).children().hasClass('glyphicon glyphicon-ok')) {
+    map.removeLayer(geojson3);
+    slider3.setAttribute('disabled', true);
+    $('#slider3').css('background-color', '#ccc');
+    $('#layer3').css('background', '#26a69e');
+    $('#area3').empty();
+    $('#count3').empty();
+  } else {
+    slider3.removeAttribute('disabled');
+    $('#slider3').css('background-color', '#5c97bf');
+    $('#layer3').css('background', '#0000FF');
+    $.getJSON("data/1961.json", function(data) {
+      geojson3 = L.geoJson(data, {
+        style: style3,
+        onEachFeature: effects
+      });
+      map.addLayer(geojson3);
+      console.log(geojson3);
+      var data = geojson3.toGeoJSON();
+      var area3 = turf.area(data);
+      var area3 = area3.toFixed(2);
+      $('#area3').html('1961: ' + area3 + ' square meters');
+      var count3 = data.features.length;
+      $('#count3').html('1961: ' + count3 + ' structures.');
+    });
+  }
+});
+//add checkmark to each filter
+$("button").click(function() {
+  if ($(this).children().hasClass('glyphicon glyphicon-ok')) {
+    $(this).find('span').removeClass('glyphicon glyphicon-ok');
+  } else {
+    $(this).find('span').addClass('glyphicon glyphicon-ok');
+  }
+});
 
+//hover effect and popup effect
+function effects(feature, layer) {
+  popupOptions = {
+    maxWidth: 200
+  };
+  if (feature.properties.NAME !== null) {
+    layer.bindLabel(feature.properties.NAME, popupOptions, {
+      noHide: true
+    });
+  };
+  layer.bindPopup("<b>Name: </b>" + feature.properties.NAME + "<br><b>Description: </b>" + feature.properties.DESCR + "<br><b>Floors: </b>" + feature.properties.FLOORS + "<br><b>Material: </b>" + feature.properties.MATERIAL);
+  layer.on({
+    click: zoomToFeature
+  });
+};
 
- //create the layer control
- L.control.layers(overlayData, null, {
-     collapsed: false,
-     position: 'topleft'
- }).addTo(map);
+//zoom to feature
+function zoomToFeature(e) {
+  map.fitBounds(e.target.getBounds());
+}
 
- var sidebar = L.control.sidebar('sidebar').addTo(map);
+var sidebar = L.control.sidebar('sidebar').addTo(map);
+sidebar.open('home');
+
+var value;
+
+slider1.noUiSlider.on('change', function() {
+  value = slider1.noUiSlider.get();
+  console.log(value);
+  map.removeLayer(geojson1);
+  $.getJSON("data/1887.json", function(data) {
+    geojson1 = L.geoJson(data, {
+      style: style1,
+      onEachFeature: effects
+    });
+    map.addLayer(geojson1);
+  });
+});
+slider2.noUiSlider.on('change', function() {
+  value = slider2.noUiSlider.get();
+  console.log(value);
+  map.removeLayer(geojson2);
+  $.getJSON("data/1925.json", function(data) {
+    geojson2 = L.geoJson(data, {
+      style: style2,
+      onEachFeature: effects
+    });
+    map.addLayer(geojson2);
+  });
+});
+slider3.noUiSlider.on('change', function() {
+  value = slider3.noUiSlider.get();
+  console.log(value);
+  map.removeLayer(geojson3);
+  $.getJSON("data/1961.json", function(data) {
+    geojson3 = L.geoJson(data, {
+      style: style3,
+      onEachFeature: effects
+    });
+    map.addLayer(geojson3);
+  });
+});
+
+$("#area").click(function(){
+  data = geojson1.toGeoJSON();
+  var area = turf.area(data);
+  console.log(area)
+})
