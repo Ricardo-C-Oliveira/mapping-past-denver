@@ -46,7 +46,7 @@
 				<p class="lorem">This project started in the spring of 2015 as an independent study in the geography program at the University of Colorado at Denver under supervision of Mike Hinke. The goal of this project was to explore how to combine different FOSS4G (Free and
 					Open Source Software for Geospatial Applications) technologies into a single product that would allow users to explore a spatio-temporal dataset. The theme chosen for this project was the urban past of Denver.</p>
 
-				<p class="lorem">The first step was to define the project's scale, we decided that Denver's Lower Downtown (LoDo) district could offer a clear presentation of the city's urban morphology change trough the years. The Denver public library holds and amazing collection of Sanborn fire insurance map on its archives, on this project such maps were photographed and then digitized in QGIS. During the digitization process each building had its characteristics translated into attributes such as, number of floors, building material, building use, and so on. Denver Public Library only holds copies of 1925 and 1961 Sanborn maps, however, the University of Colorado at Boulder provides digital copies of the 1887 edition of these fire insurance maps. The addition of this earlier year allowed us to construct a more complete picture of Denver’s urban evolution from the late nineteenth century to mid twentieth century.
+				<p class="lorem">The first step was to define the project's scale, we decided that Denver's Lower Downtown (LoDo) district could offer a clear presentation of the city's urban morphology change through the years. The Denver public library holds and amazing collection of Sanborn fire insurance map on its archives, on this project such maps were photographed and then digitized in QGIS. During the digitization process each building had its characteristics translated into attributes such as, number of floors, building material, building use, and so on. Denver Public Library only holds copies of 1925 and 1961 Sanborn maps, however, the University of Colorado at Boulder provides digital copies of the 1887 edition of these fire insurance maps. The addition of this earlier year allowed us to construct a more complete picture of Denver’s urban evolution from the late nineteenth century to mid twentieth century.
 				</p>
 
 				<img src="img/img1.jpg" class="img-circle" width="200" height="200">
@@ -99,7 +99,7 @@
 			<div class="sidebar-pane" id="code">
 				<h1>Behind the Scenes</h1>
 
-				<p class="lorem">The main libraries that empower this map are:</p>
+				<p class="lorem">The main libraries that power this map are:</p>
 				<ul>
 					<li>
 						<a target="_blank" href="http://leafletjs.com/">Leaflet.js</a>
@@ -115,7 +115,7 @@
 					</li>
 				</ul>
 
-				<p class="lorem">The main driver of this map is leaflet, which does all the heavy lifting to generate the map itself. Once the base map is loaded we can use three different set of functions to grab and display the historical layers. Everything starts when the user click on one of the three buttons, which triggers a given function. The mechanisms that allow user interaction with the interface are powered by jQuery. Once the button is clicked a series of jQuery functions change the appearance of the button, allow the user to use the opacity slider, display the measurement values, and make a request to load the specific historical layer. To load a historical layer the web-site needs first to grab the raw geoJson, this is made by using an AJAX call through the .getJSON function, also a jQuery function. Once the data is gathered a leaflet function draws the layer using on the map. After the layer is loaded the script continues to count how many structures are on this specific layer and outputs the final number on the interface. The area is calculated on the fly by turf, a javascript library that allows for some spatial operations, the calculated area is then displayed. See below the function that makes the whole process possible.</p>
+				<p class="lorem">The main driver of this map is leaflet, which does all the heavy lifting to generate the map itself. Once the base map is loaded we can use three different sets of functions to grab and display the historical layers. Everything starts when the user clickx on one of the three buttons, which triggers a given function. The mechanisms that allow user interaction with the interface are powered by jQuery. Once the button is clicked a series of jQuery functions change the appearance of the button, allow the user to use the opacity slider, display the measurement values, and make a request to load the specific historical layer. To load a historical layer the web-site needs first to grab the raw geoJson, this is made by using an AJAX call through the <code>.getJSON</code> function, which is a jQuery function. Once the data is gathered a leaflet function draws the layer on the map. After the layer is loaded the script continues to count how many structures are on this specific layer and outputs the final number on the interface. The area is calculated on the fly by turf.js, a javascript library that allows for some spatial operations, and the area is then displayed. See below the function that makes the whole process possible.</p>
 
 				<pre>
 <code class="js">
