@@ -5,6 +5,7 @@ var southWest = L.latLng(39.747856, -106.003864),
 var map = L.map('map', {
   'zoomControl': false,
   'minZoom': 17,
+  //'maxZoom': 5,
   'maxBounds': bounds
 }).setView([39.752171, -105.000500], 17);
 
@@ -53,10 +54,11 @@ function style1(feature) {
   return {
     weight: 5,
     fillColor: '#FF9900',
-    color: "rgba(115, 118, 222, 0)",
+    color: '#c37a0b',
     weight: 2,
     opacity: 1,
     fillOpacity: slider1.noUiSlider.get(),
+    dashArray: 3,
   };
 };
 
@@ -64,10 +66,11 @@ function style2(feature) {
   return {
     weight: 5,
     fillColor: '#003300',
-    color: "rgba(115, 118, 222, 0)",
+    color: '#0e280e',
     weight: 2,
     opacity: 1,
     fillOpacity: slider2.noUiSlider.get(),
+    dashArray: 3,
   };
 };
 
@@ -75,10 +78,11 @@ function style3(feature) {
   return {
     weight: 5,
     fillColor: '#0000FF',
-    color: "rgba(115, 118, 222, 0)",
+    color: '#171795',
     weight: 2,
     opacity: 1,
     fillOpacity: slider3.noUiSlider.get(),
+    dashArray: 3,
   };
 };
 //button is clicked to show layer
@@ -128,7 +132,6 @@ $("#layer2").click(function() {
         onEachFeature: effects
       });
       map.addLayer(geojson2);
-      console.log(geojson2);
       var data = geojson2.toGeoJSON();
       var area2 = turf.area(data);
       var area2 = area2.toFixed(2);
@@ -187,16 +190,42 @@ function effects(feature, layer) {
   };
   layer.bindPopup("<b>Name: </b>" + feature.properties.NAME + "<br><b>Description: </b>" + feature.properties.DESCR + "<br><b>Floors: </b>" + feature.properties.FLOORS + "<br><b>Material: </b>" + feature.properties.MATERIAL);
   layer.on({
-    click: zoomToFeature
+    click: zoomToFeature,
+    mouseover: highlightFeature,
+    mouseout: resetHighlight,
   });
 };
+
+function highlightFeature(e) {
+  layer = e.target;
+  originalStyle = layer.options.style;
+  layer.setStyle({
+    weight: 5,
+    dashArray: '5',
+    fillOpacity: 0.7,
+    color: '#ccc',
+  });
+  if (!L.Browser.ie && !L.Browser.opera) {
+    layer.bringToFront();
+  }
+}
+
+function resetHighlight(e) {
+  if (originalStyle == style1) {
+    geojson1.resetStyle(e.target);
+  } else if (originalStyle == style2) {
+    geojson2.resetStyle(e.target);
+  } else {
+    geojson3.resetStyle(e.target);
+  }
+}
 
 //zoom to feature
 function zoomToFeature(e) {
   map.fitBounds(e.target.getBounds());
 }
 
-var sidebar = L.control.sidebar('sidebar').addTo(map);
+var sidebar = L.control.sidebar('sidebar', {closeButton: true}).addTo(map);
 sidebar.open('home');
 
 var value;
@@ -238,7 +267,7 @@ slider3.noUiSlider.on('change', function() {
   });
 });
 
-$("#area").click(function(){
+$("#area").click(function() {
   data = geojson1.toGeoJSON();
   var area = turf.area(data);
   console.log(area)

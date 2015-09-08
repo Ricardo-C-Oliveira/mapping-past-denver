@@ -10,12 +10,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 1,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Distribution Depot",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -26,11 +26,11 @@
         "properties": {
             "ID_0": 2,
             "NAME": "Chevrolet Motor Co.",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -40,12 +40,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 3,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machinery Warehouse",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -56,7 +56,7 @@
         "properties": {
             "ID_0": 4,
             "NAME": "National Hotel",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
@@ -70,12 +70,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 5,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Auto Truck Fright Depot",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -90,7 +90,7 @@
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -100,12 +100,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 7,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Wholesale Flour and Feed",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -115,12 +115,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 8,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Wholesale Box & Barrel Warehouse",
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -130,12 +130,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 9,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Electrical Supplies Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -145,7 +145,7 @@
         "type": "Feature",
         "properties": {
             "ID_0": 10,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Battery Works & Warehouse/Chemical Lab",
             "FLOORS": 2,
             "MATERIAL": "brick",
@@ -165,7 +165,7 @@
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -180,7 +180,7 @@
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -190,12 +190,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 13,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Filling Station",
             "FLOORS": 1,
             "MATERIAL": "iron",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -205,12 +205,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 14,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Salt Warehouse",
             "FLOORS": 1,
             "MATERIAL": "frame and iron clad",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -225,7 +225,7 @@
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -235,12 +235,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 16,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -250,12 +250,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 17,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Hides, Fur and Wool Warehouse",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -265,12 +265,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 18,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machinery, Warehouse",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -280,12 +280,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 19,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Garage",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -296,11 +296,11 @@
         "properties": {
             "ID_0": 20,
             "NAME": "New Auto Storage",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -310,12 +310,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 21,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machine Shop",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -326,11 +326,11 @@
         "properties": {
             "ID_0": 22,
             "NAME": "Ceres Hotel",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -340,12 +340,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 23,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -355,12 +355,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 24,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -370,12 +370,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 25,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -385,12 +385,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 26,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -400,12 +400,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 27,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -415,12 +415,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 28,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -430,12 +430,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 29,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Restaurant",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -450,7 +450,7 @@
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -460,7 +460,7 @@
         "type": "Feature",
         "properties": {
             "ID_0": 31,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "vacant, iron storage",
             "FLOORS": 2,
             "MATERIAL": "brick",
@@ -475,12 +475,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 32,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machine Shop",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -490,12 +490,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 33,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machine Shop",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -505,12 +505,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 34,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machine Shop",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -525,7 +525,7 @@
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -535,12 +535,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 36,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "VACANT",
             "FLOORS": 1,
             "MATERIAL": "frame and iron clad",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -550,7 +550,7 @@
         "type": "Feature",
         "properties": {
             "ID_0": 37,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "VACANT",
             "FLOORS": 1,
             "MATERIAL": "brick, frame",
@@ -566,7 +566,7 @@
         "properties": {
             "ID_0": 38,
             "NAME": "Puritas Water Plant",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 2,
             "MATERIAL": "brick, frame",
             "DATASET": 1,
@@ -580,12 +580,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 39,
-            "NAME": null,
-            "DESCR": null,
+            "NAME": "Unknown",
+            "DESCR": "Unknown",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -595,12 +595,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 40,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Storage",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -610,12 +610,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 41,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machine Shop",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -625,12 +625,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 42,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Restaurant",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -640,12 +640,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 43,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Barber",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -655,12 +655,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 44,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -670,12 +670,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 45,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Cobbler",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -685,12 +685,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 46,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Bicycles",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -700,12 +700,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 47,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -715,12 +715,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 48,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Tailor",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -730,12 +730,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 49,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Saloon",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -745,12 +745,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 50,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Electric Lighting Systems",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -760,12 +760,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 51,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machine Shop",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -775,7 +775,7 @@
         "type": "Feature",
         "properties": {
             "ID_0": 52,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Garage and Office and Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
@@ -791,7 +791,7 @@
         "properties": {
             "ID_0": 53,
             "NAME": "Grand Central Hotel",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
@@ -805,7 +805,7 @@
         "type": "Feature",
         "properties": {
             "ID_0": 54,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machinery and Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
@@ -820,12 +820,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 55,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "VACANT",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -835,12 +835,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 56,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -850,12 +850,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 57,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machinery Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -870,7 +870,7 @@
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -885,7 +885,7 @@
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -895,12 +895,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 60,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "VACANT",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -925,12 +925,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 62,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Grocery Warehouse",
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -940,12 +940,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 63,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Grocery Warehouse",
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -960,7 +960,7 @@
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -985,12 +985,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 66,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Filling Station",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1000,12 +1000,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 67,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Office",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1020,7 +1020,7 @@
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1030,12 +1030,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 69,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Warehouse and Retail Hardware",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1045,12 +1045,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 70,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Hardware Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1060,12 +1060,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 71,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Farm-Lighting Machinery Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1075,12 +1075,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 72,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1090,12 +1090,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 73,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1105,12 +1105,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 74,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Warehouse Meats",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1120,12 +1120,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 75,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1135,12 +1135,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 76,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "machinery Warehouse",
             "FLOORS": 6,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1150,12 +1150,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 77,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Iron Cable Warehouse",
             "FLOORS": 6,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1165,12 +1165,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 78,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1180,12 +1180,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 79,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1195,12 +1195,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 80,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "VACANT",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1210,12 +1210,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 81,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Wholesale Meats and Sausage Factory",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1225,12 +1225,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 82,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Butchers Supplies",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1240,7 +1240,7 @@
         "type": "Feature",
         "properties": {
             "ID_0": 83,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Sausage Factory",
             "FLOORS": 2,
             "MATERIAL": "brick",
@@ -1255,12 +1255,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 84,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1270,12 +1270,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 85,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1285,12 +1285,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 86,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1300,12 +1300,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 87,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1315,12 +1315,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 88,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Implement Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1330,12 +1330,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 89,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1345,12 +1345,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 90,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1365,7 +1365,7 @@
             "FLOORS": 2,
             "MATERIAL": "stone",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1380,7 +1380,7 @@
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1395,7 +1395,7 @@
             "FLOORS": 2,
             "MATERIAL": "stone",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1405,12 +1405,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 94,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machinery Warehouse",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1420,12 +1420,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 95,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Implement Shed",
             "FLOORS": 1,
             "MATERIAL": "frame and iron",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1435,12 +1435,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 96,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Wholesale Groceries",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1455,7 +1455,7 @@
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1465,12 +1465,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 98,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Garage",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1485,7 +1485,7 @@
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1495,12 +1495,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 100,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Musical Instrument Warehouse",
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1515,7 +1515,7 @@
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1526,11 +1526,11 @@
         "properties": {
             "ID_0": 102,
             "NAME": "Oxford Hotel Fireproof Annex",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 6,
             "MATERIAL": "fireproof",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1545,7 +1545,7 @@
             "FLOORS": 4,
             "MATERIAL": "Brick and Frame",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1560,7 +1560,7 @@
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1575,7 +1575,7 @@
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1585,12 +1585,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 106,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Plumbing Supplies Warehouse",
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1600,12 +1600,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 107,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1615,12 +1615,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 108,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1635,7 +1635,7 @@
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1645,12 +1645,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 110,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Whole Rubber Goods",
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1665,7 +1665,7 @@
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1675,12 +1675,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 112,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Irrigation Machinery",
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1690,12 +1690,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 113,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1706,11 +1706,11 @@
         "properties": {
             "ID_0": 114,
             "NAME": "Storage Warehouse",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1720,12 +1720,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 115,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Grocery Warehouse",
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1740,7 +1740,7 @@
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1755,7 +1755,7 @@
             "FLOORS": 6,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1765,12 +1765,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 118,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Office",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1780,12 +1780,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 119,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1795,12 +1795,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 120,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1810,12 +1810,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 121,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "VACANT",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1825,12 +1825,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 122,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1840,12 +1840,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 123,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Office",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1855,12 +1855,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 124,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Office",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1870,12 +1870,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 125,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Warehouse and Coffe Roaster",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1885,12 +1885,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 126,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Auto Service",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1905,7 +1905,7 @@
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1915,12 +1915,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 128,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Tractor & Threshin Machinery Warehouse",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1930,12 +1930,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 129,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Machinery Shed",
             "FLOORS": 1,
             "MATERIAL": "Iron",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1945,12 +1945,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 130,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Office and Tractor Warehouse",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1965,7 +1965,7 @@
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1975,12 +1975,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 132,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -1990,12 +1990,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 133,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2005,12 +2005,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 134,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2020,12 +2020,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 135,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2035,12 +2035,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 136,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 1,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2050,12 +2050,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 137,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2065,12 +2065,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 138,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2080,12 +2080,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 139,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2095,12 +2095,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 140,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2125,12 +2125,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 142,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Wholesale Cigars",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2145,7 +2145,7 @@
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2155,12 +2155,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 144,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Wholesale Paper",
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2170,12 +2170,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 145,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2185,12 +2185,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 146,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Wholesale Cigars",
             "FLOORS": 3,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2205,7 +2205,7 @@
             "FLOORS": 5,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2215,12 +2215,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 148,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2230,12 +2230,12 @@
         "type": "Feature",
         "properties": {
             "ID_0": 149,
-            "NAME": null,
+            "NAME": "Unknown",
             "DESCR": "Store",
             "FLOORS": 2,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
@@ -2246,11 +2246,11 @@
         "properties": {
             "ID_0": 150,
             "NAME": "New Elk Hotel",
-            "DESCR": null,
+            "DESCR": "Unknown",
             "FLOORS": 4,
             "MATERIAL": "brick",
             "DATASET": 1,
-            "NOTES": null
+            "NOTES": "Unknown"
         },
         "geometry": {
             "type": "Polygon",
