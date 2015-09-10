@@ -59,22 +59,17 @@ img {
 
 #slider1, #slider2, #slider3 {
   background-color: #ccc;
+  display: none;
+  margin-top: 13px
 }
-#slider1{
-  margin-top: 13
-}
-#slider2{
-  margin-top: 25
-}
-#slider3{
-  margin-top: 23
-}
+
 .noUi-handle{
   border-radius: 0
 }
 .section{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  display: inline-block;
 }
 .fa{
   line-height: 2;

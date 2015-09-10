@@ -90,12 +90,14 @@ $("#layer1").click(function() {
   if ($(this).children().hasClass('glyphicon glyphicon-ok')) {
     map.removeLayer(geojson1);
     slider1.setAttribute('disabled', true); //disable slider when layer is removed
+    $('#slider1').hide(); //hide the slider when the layer is removed
     $('#slider1').css('background-color', '#ccc'); //set slider color to gray
     $('#layer1').css('background', '#26a69e'); //return button to original color
     $('#area1').empty(); //remove area number
     $('#count1').empty(); //remove count number
   } else {
     slider1.removeAttribute('disabled');
+    $('#slider1').show(); //add the slider when the layer is add
     $('#slider1').css('background-color', '#5c97bf'); //set slider color to blue
     $('#layer1').css('background', '#FF9900'); //set button color to match the layer's color
     $.getJSON("data/1887.json", function(data) {
@@ -118,12 +120,14 @@ $("#layer2").click(function() {
   if ($(this).children().hasClass('glyphicon glyphicon-ok')) {
     map.removeLayer(geojson2);
     slider2.setAttribute('disabled', true);
+    $('#slider2').hide();
     $('#slider2').css('background-color', '#ccc');
     $('#layer2').css('background', '#26a69e');
     $('#area2').empty();
     $('#count2').empty();
   } else {
     slider2.removeAttribute('disabled');
+    $('#slider2').show();
     $('#slider2').css('background-color', '#5c97bf');
     $('#layer2').css('background', '#0e5e0e');
     $.getJSON("data/1925.json", function(data) {
@@ -145,12 +149,14 @@ $("#layer3").click(function() {
   if ($(this).children().hasClass('glyphicon glyphicon-ok')) {
     map.removeLayer(geojson3);
     slider3.setAttribute('disabled', true);
+    $('#slider3').hide();
     $('#slider3').css('background-color', '#ccc');
     $('#layer3').css('background', '#26a69e');
     $('#area3').empty();
     $('#count3').empty();
   } else {
     slider3.removeAttribute('disabled');
+    $('#slider3').show();
     $('#slider3').css('background-color', '#5c97bf');
     $('#layer3').css('background', '#0000FF');
     $.getJSON("data/1961.json", function(data) {
