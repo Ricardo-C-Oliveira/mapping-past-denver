@@ -1,3 +1,5 @@
+L.mapbox.accessToken = 'pk.eyJ1IjoiZGFya3ZlbmdlcnMiLCJhIjoidFQyQi15ayJ9.0ImOfSMr3xjHj9W1Ilbo1g';
+
 var southWest = L.latLng(39.747856, -106.003864),
   northEast = L.latLng(39.757304, -104.992214),
   bounds = L.latLngBounds(southWest, northEast);
@@ -9,16 +11,16 @@ var map = L.map('map', {
   'maxBounds': bounds
 }).setView([39.752171, -105.000500], 17);
 
-
+var layer = L.mapbox.tileLayer('darkvengers.48d79adc').addTo(map);
 //zoom custom position
 L.control.zoom({
   position: 'topright'
 }).addTo(map);
 
 //the base map
-L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
+/*L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
-}).addTo(map);
+}).addTo(map);*/
 
 //slider to set opacity
 var slider1 = document.getElementById('slider1');
