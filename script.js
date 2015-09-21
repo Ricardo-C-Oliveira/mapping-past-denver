@@ -21,6 +21,7 @@ L.control.zoom({
 var slider1 = document.getElementById('slider1');
 var slider2 = document.getElementById('slider2');
 var slider3 = document.getElementById('slider3');
+var slider4 = document.getElementById('slider4');
 
 noUiSlider.create(slider1, {
   start: [0.7],
@@ -326,7 +327,7 @@ slider4.noUiSlider.on('change', function() {
   console.log(value);
   map.removeLayer(geojson4);
   $.getJSON("data/2015.json", function(data) {
-    geojson3 = L.geoJson(data, {
+    geojson4 = L.geoJson(data, {
       style: style4,
       onEachFeature: effects
     });
