@@ -17,11 +17,6 @@ L.control.zoom({
   position: 'topright'
 }).addTo(map);
 
-//the base map
-/*L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png', {
-  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
-}).addTo(map);*/
-
 //slider to set opacity
 var slider1 = document.getElementById('slider1');
 var slider2 = document.getElementById('slider2');
@@ -44,6 +39,14 @@ noUiSlider.create(slider2, {
   }
 });
 noUiSlider.create(slider3, {
+  start: [0.7],
+  connect: 'lower',
+  range: {
+    'min': [0.1],
+    'max': [1]
+  }
+});
+noUiSlider.create(slider4, {
   start: [0.7],
   connect: 'lower',
   range: {
@@ -84,6 +87,18 @@ function style3(feature) {
     weight: 2,
     opacity: 1,
     fillOpacity: slider3.noUiSlider.get(),
+    dashArray: 3,
+  };
+};
+
+function style4(feature) {
+  return {
+    weight: 5,
+    fillColor: '#6f146e',
+    color: '#240526',
+    weight: 2,
+    opacity: 1,
+    fillOpacity: slider4.noUiSlider.get(),
     dashArray: 3,
   };
 };
@@ -174,6 +189,36 @@ $("#layer3").click(function() {
       $('#area3').html('1961: ' + area3 + ' square meters');
       var count3 = data.features.length;
       $('#count3').html('1961: ' + count3 + ' structures.');
+    });
+  }
+});
+$("#layer4").click(function() {
+  if ($(this).children().hasClass('glyphicon glyphicon-ok')) {
+    map.removeLayer(geojson4);
+    slider4.setAttribute('disabled', true);
+    $('#slider4').hide();
+    $('#slider4').css('background-color', '#ccc');
+    $('#layer4').css('background', '#26a69e');
+    $('#area4').empty();
+    $('#count4').empty();
+  } else {
+    slider4.removeAttribute('disabled');
+    $('#slider4').show();
+    $('#slider4').css('background-color', '#5c97bf');
+    $('#layer4').css('background', '#6f146e');
+    $.getJSON("data/2015.json", function(data) {
+      geojson4 = L.geoJson(data, {
+        style: style4,
+        onEachFeature: effects
+      });
+      map.addLayer(geojson4);
+      console.log(geojson4);
+      var data = geojson4.toGeoJSON();
+      var area4 = turf.area(data);
+      var area4 = area4.toFixed(2);
+      $('#area4').html('2015: ' + area4 + ' square meters');
+      var count3 = data.features.length;
+      $('#count4').html('2015: ' + count4 + ' structures.');
     });
   }
 });
@@ -272,6 +317,18 @@ slider3.noUiSlider.on('change', function() {
       onEachFeature: effects
     });
     map.addLayer(geojson3);
+  });
+});
+slider4.noUiSlider.on('change', function() {
+  value = slider4.noUiSlider.get();
+  console.log(value);
+  map.removeLayer(geojson3);
+  $.getJSON("data/2015.json", function(data) {
+    geojson3 = L.geoJson(data, {
+      style: style4,
+      onEachFeature: effects
+    });
+    map.addLayer(geojson4);
   });
 });
 
