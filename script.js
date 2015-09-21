@@ -217,7 +217,7 @@ $("#layer4").click(function() {
       var area4 = turf.area(data);
       var area4 = area4.toFixed(2);
       $('#area4').html('2015: ' + area4 + ' square meters');
-      var count3 = data.features.length;
+      var count4 = data.features.length;
       $('#count4').html('2015: ' + count4 + ' structures.');
     });
   }
@@ -268,8 +268,10 @@ function resetHighlight(e) {
     geojson1.resetStyle(e.target);
   } else if (originalStyle == style2) {
     geojson2.resetStyle(e.target);
-  } else {
+  } else if (originalStyle == style3){
     geojson3.resetStyle(e.target);
+  } else {
+    geojson4.resetStyle(e.target);
   }
 }
 
@@ -322,7 +324,7 @@ slider3.noUiSlider.on('change', function() {
 slider4.noUiSlider.on('change', function() {
   value = slider4.noUiSlider.get();
   console.log(value);
-  map.removeLayer(geojson3);
+  map.removeLayer(geojson4);
   $.getJSON("data/2015.json", function(data) {
     geojson3 = L.geoJson(data, {
       style: style4,
@@ -331,9 +333,3 @@ slider4.noUiSlider.on('change', function() {
     map.addLayer(geojson4);
   });
 });
-
-$("#area").click(function() {
-  data = geojson1.toGeoJSON();
-  var area = turf.area(data);
-  console.log(area)
-})
